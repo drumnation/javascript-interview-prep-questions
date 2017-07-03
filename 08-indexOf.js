@@ -6,10 +6,10 @@ Implement the indexOf function for arrays.
 
 ------------------------------------------------------------------*/
 
-Array.prototype.myIndexOf = function (ele) {
-    for (let i = 0; i < this.length; i++) {
-        if (ele === this[i]) {
-            return i;
+Array.prototype.myIndexOf = function (element) {
+    for (let index = 0; index < this.length; index++) {
+        if (element === this[index]) {
+            return index
         }
     }
     return -1
