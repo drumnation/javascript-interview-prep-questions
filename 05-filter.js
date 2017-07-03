@@ -17,7 +17,6 @@ Implement the filter function.
 
 */
 
-
 Array.prototype.myFilter = function(callback, context) {
     arr = []
     for (var i = 0; i < this.length; i++) {
