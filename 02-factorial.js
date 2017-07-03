@@ -8,12 +8,9 @@ In mathematics, the factorial of a non-negative integer n, denoted by n!,
 is the product of all positive integers less than or equal to n. 
 
 For example, 5! = 5 x 4 x 3 x 2 x 1 = 120
-------------------------------------------------------------------------
-*/
-
+------------------------------------------------------------------------*/
 
 // NON-RECURSIVELY WITH WHILE LOOP
-// SOURCE: https://docs.microsoft.com/en-us/scripting/javascript/advanced/recursion-javascript
 
 const factorial = (num) => {
     // If the number is less than 0, reject it.
@@ -33,6 +30,10 @@ const factorial = (num) => {
 }
 
 let result = factorial(8) // 40320
+
+/* 
+SOURCE: https://docs.microsoft.com/en-us/scripting/javascript/advanced/recursion-javascript
+------------------------------------------------------------------------------------------*/
 
 // RECURSIVELY
 
@@ -341,7 +342,5 @@ number 0
 * num is equal to 0 -> (return 1)
 factorial(6):  720
 
-*/
-
-// JavaScript: Calculate the factorial of a number
-// source: http://www.w3resource.com/javascript-exercises/javascript-recursion-function-exercise-1.php
+SOURCE: http://www.w3resource.com/javascript-exercises/javascript-recursion-function-exercise-1.php
+--------------------------------------------------------------------------------------------------*/
