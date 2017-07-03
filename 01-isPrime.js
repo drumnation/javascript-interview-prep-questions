@@ -1,12 +1,15 @@
-// 1. a modulus expression will return zero if the number isn’t prime
+/*
+ISPRIME
 
-// 2. loop from two all the way up until our number minus one because we know that our number will be divisible by itself and one
-    // i.e. only need to check range between 1 and itself because above is impossible
+1. a modulus expression will return zero if the number isn’t prime
 
-// 3. If remainder of number divided by the count is zero then we know it is not prime, break out
+2. loop from two all the way up until our number minus one because we know that our number will be divisible by itself and one
+    i.e. only need to check range between 1 and itself because above is impossible
 
-// Full explanation
-// https://www.thepolyglotdeveloper.com/2015/04/determine-if-a-number-is-prime-using-javascript/
+3. If remainder of number divided by the count is zero then we know it is not prime, break out
+
+SOURCE: https://www.thepolyglotdeveloper.com/2015/04/determine-if-a-number-is-prime-using-javascript/
+----------------------------------------------------------------------------------------------------*/
 
 isPrime = possiblePrime => {
     for (let count = 2; count < possiblePrime; count++) {
@@ -16,6 +19,8 @@ isPrime = possiblePrime => {
     }
     return possiblePrime > 1
 }
+
+// TESTS
 
 console.log('isPrime? True or False')
 console.log('**********************')
