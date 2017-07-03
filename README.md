@@ -1,1 +1,2 @@
-# javascript-interview-prep-questions
+# My solutions to questions from the blog post:
+## "The Best Frontend JavaScript Interview Questions (written by a Frontend Engineer)"  [ Source](https://performancejs.com/post/hde6d32/The-Best-Frontend-JavaScript-Interview-Questions-%28written-by-a-Frontend-Engineer%29)
