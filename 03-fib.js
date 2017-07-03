@@ -37,6 +37,7 @@ console.log(loopingFib(1)) // 1
 console.log(loopingFib(8)) // 21
 console.log(loopingFib(10)) // 55
 console.log(loopingFib(20)) // 6765
+console.log(loopingFib(4)) // 3
 
 /*
 
@@ -53,13 +54,13 @@ SOURCE: https://www.thepolyglotdeveloper.com/2015/01/fibonacci-sequence-printed-
 
 */ 
 
-const recursivefib = (number) => {
+const recursiveFib = (number) => {
     return (
         (number < 1) 
             ? 0
             : (number <= 2)  // 
                 ? 1
-                : fib(number - 1) + fib(number - 2) // 
+                : recursiveFib(number - 1) + recursiveFib(number - 2) // 
     )
 }
 
@@ -72,7 +73,7 @@ console.log(recursiveFib(1)) // 1
 console.log(recursiveFib(8)) // 21
 console.log(recursiveFib(10)) // 55
 console.log(recursiveFib(20)) // 6765
-console.log(fib(4)) // 3
+console.log(recursiveFib(4)) // 3
 
 /* DIAGRAM
 
