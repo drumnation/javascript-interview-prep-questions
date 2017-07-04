@@ -55,3 +55,8 @@ Array.prototype.findMin() = function () {
 console.log( '([]) => ', [].mySort() ) // []
 console.log( '([-4, 0, 1, 3, 3, Infinity]) =>', [-4, 1, Infinity, 3, 3, 0].mySort() ) // [-4, 0, 1, 3, 3, Infinity]
 console.log( '([ -43, -7, 0, 1, 5, 6, 6, 9, 22, 34, 54, 57, 99, 545 ]) =>', [0, 1, 5, 6, -7, 54, 545, 34, 57, 9, 6, -43, 22, 99].mySort() ) // [ -43, -7, 0, 1, 5, 6, 6, 9, 22, 34, 54, 57, 99, 545 ]
+
+/*
+
+SOURCE: https://github.com/martinoamigo/grokking_alogritimhs/blob/f89fe24a55a8ed3aa2d85995206f28477e3db956/Selection%20Sort.js
+--------------------------------------------------------------------------------------------------------------------------------------------*/
