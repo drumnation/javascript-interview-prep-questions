@@ -42,8 +42,8 @@ SOLUTION STEPS
 
 const isBalanced = (parentheses) => {
     let stack = []
-    const open = { '{': '}', '[': ']', '(': ')' }
-    const closed = { '}': true, ']': true, ')': true }
+    const open = { '{': '}' }
+    const closed = { '}': true }
 
     for (let i = 0; i < parentheses.length; i++) {
         let paren = parentheses[i]
@@ -62,57 +62,8 @@ console.log('EXPECTED', 'RETURN') // true
 console.log(true, isBalanced('foo { bar { baz } boo }')) // true
 console.log(false, isBalanced('foo { bar { baz }')) // false
 console.log(false, isBalanced('foo { bar } }')) // false
-console.log(false, isBalanced('('))  // false
-console.log(true, isBalanced('()')) // true
-console.log(false, isBalanced(')('))  // false
-console.log(true, isBalanced('(())'))  // true
-console.log(true, isBalanced('[](){}')) // true
-console.log(true, isBalanced('[({})]'))   // true
-console.log(false, isBalanced('[(]{)}')) // false
-console.log(true, isBalanced('let supYo  = { hey: dog() }')) // true
-console.log(false, isBalanced('let fiddle = function() { doggy.eat()')) // false
-
 
 /*
-
-CONSOLE OUTPUT
-(Log of stack after pushing on line 35) 
-
-EXPECTED RETURN
-[ '{' ]
-[ '{', '{' ]
-true true
-[ '{' ]
-[ '{', '{' ]
-false false
-[ '{' ]
-false false
-[ '(' ]
-false false
-[ '(' ]
-true true
-false false
-[ '(' ]
-[ '(', '(' ]
-true true
-[ '[' ]
-[ '(' ]
-[ '{' ]
-true true
-[ '[' ]
-[ '[', '(' ]
-[ '[', '(', '{' ]
-true true
-[ '[' ]
-[ '[', '(' ]
-false false
-[ '{' ]
-[ '{', '(' ]
-true true
-[ '(' ]
-[ '{' ]
-[ '{', '(' ]
-false false
 
 SOURCE: http://clarkfeusier.com/2015/01/16/interview-question-balanced-parentheses-stack.html
 ------------------------------------------------------------------*/
