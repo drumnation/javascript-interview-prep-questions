@@ -18,19 +18,17 @@ Implement the filter function.
 */
 
 Array.prototype.myFilter = function(callback, context) {
-    arr = []
-    for (var i = 0; i < this.length; i++) {
-        if (callback.call(context, this[i], i, this))
-            arr.push(this[i])
+    let filtered = []
+    for (let index = 0; index < this.length; index++) {
+        if (callback.call(context, this[index], index, this))
+            filtered.push(this[index])
     }
-    return arr
+    return filtered
 }
 
 // TESTS
 
-var numbers = [1, 20, 30, 80, 2, 9, 3]
-var newNum = numbers.myFilter( n => n >= 10 )
-console.log(newNum); // [ 20, 30, 80 ]
+console.log('([ 20, 30, 80 ]) =>', [1, 20, 30, 80, 2, 9, 3].myFilter( n => n >= 10 )); // [ 20, 30, 80 ]
 
 /*
 
