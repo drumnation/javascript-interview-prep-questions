@@ -19,7 +19,9 @@ SOLUTION STEPS
 
 // SOLUTION
 
-const intersection = (array1, array2) => array1.filter( testNumber => array2.indexOf(testNumber) !== -1 )
+const intersection = (array1, array2) => {
+    array1.filter( testNumber => array2.indexOf(testNumber) !== -1 )
+}
 
 // TESTS
 

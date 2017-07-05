@@ -28,7 +28,7 @@ Array.prototype.mySort = function() {
     const arrayLength = this.length
     
     while (count < arrayLength) {
-        let smallestIndex =  copy.findMin() // or using 2 native js methods => copy.indexOf(Math.min.apply(null, copy))
+        let smallestIndex = copy.findMin() // or using 2 native js methods => copy.indexOf(Math.min.apply(null, copy))
         sorted.push(copy[smallestIndex])
         copy.splice(smallestIndex, 1)
         count++
