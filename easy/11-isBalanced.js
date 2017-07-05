@@ -25,9 +25,9 @@ SOLUTION STEPS
     a. one for all open paren characters
         1. set open keys to open paren
         2. set open values to matching closed paren symbol
+    b. one for all closed paren characters
         3. set closed keys to closed paren symbols
         4. set closed values to true  
-    b. one for all closed paren characters
 3. Iterate through the string's characters
     a. if character is open paren push into stack
     b. else if character is closed pop off last open from stack
@@ -45,8 +45,8 @@ const isBalanced = (parentheses) => {
     const open = { '{': '}' }
     const closed = { '}': true }
 
-    for (let i = 0; i < parentheses.length; i++) {
-        let paren = parentheses[i]
+    for (let index = 0; index < parentheses.length; index++) {
+        let paren = parentheses[index]
         if (open[paren]) {
             stack.push(paren)
         } else if (closed[paren]) {

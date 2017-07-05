@@ -24,16 +24,16 @@ SOLUTION STEPS
 
 // SOLUTION
 
-Array.prototype.uniq = () => {
-        let test = {}
-        let unique = []
-    for (let index = 0, len = this.length; index < len; index++) {
-        if (!test[this[index]]) {
-            test[this[index]] = true
-            unique.push(this[index])
+Array.prototype.uniq = function() {
+    let seen = {}
+
+    return this.reduce((result, current) => {
+        if (current in seen) {
+            return result
         }
-    }
-    return unique
+        seen[current] = true
+        return result.concat(current)
+    }, [])
 }
 
 // TESTS

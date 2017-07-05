@@ -29,9 +29,9 @@ const missing = (sequence) => {
     let missingNumbers = []
     const sequenceLength = Math.max.apply(null, sequence)
     for (let possibleMissingNum = 1; possibleMissingNum < sequenceLength; possibleMissingNum++) {
-        sequence.indexOf(possibleMissingNum) < 0 ? missingNumbers.push(possibleMissingNum) : null
+        sequence.indexOf(possibleMissingNum) === -1 ? missingNumbers.push(possibleMissingNum) : null
     }
-    return missingNumbers.length === 0 ? undefined : missingNumbers
+    return missingNumbers.length > 0 ? missingNumbers : undefined
 }
 
 

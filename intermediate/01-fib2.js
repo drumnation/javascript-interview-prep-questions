@@ -20,27 +20,27 @@ Like the fib function you implemented above, able to handle numbers up to 50 (hi
 
 */
 
-const loopingFib = (number) => {
-    let a = 0, b = 1, temp = 1
-    for (let count = 2; count <= number; count++) {
-        temp = a + b
+const fib = (number) => {
+    let a = 0, b = 1, fibonacci = 1, count = 2
+    while (count++ <= number) {
+        fibonacci = a + b
         a = b
-        b = temp
+        b = fibonacci
     }
-    return temp
+    return fibonacci
 }
 
 // TESTS
 
 console.log('LOOPING FIB')
-console.log(loopingFib(-50)) // 0
-console.log(loopingFib(0)) // 0
-console.log(loopingFib(1)) // 1
-console.log(loopingFib(8)) // 21
-console.log(loopingFib(10)) // 55
-console.log(loopingFib(20)) // 6765
-console.log(loopingFib(4)) // 3
-console.log(loopingFib(50)) // 3
+console.log(fib(-50)) // 0
+console.log(fib(0)) // 0
+console.log(fib(1)) // 1
+console.log(fib(8)) // 21
+console.log(fib(10)) // 55
+console.log(fib(20)) // 6765
+console.log(fib(4)) // 3
+console.log(fib(50)) // 3
 
 /*
 
