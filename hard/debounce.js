@@ -36,3 +36,8 @@ let b = debounce(a, 100)
 console.log(b())
 console.log(b())
 console.log(b()) // only this call should invoke a()
+
+/*
+
+SOURCE: https://gist.github.com/nmsdvid/8807205
+-------------------------------------------------------------------------------------------*/
