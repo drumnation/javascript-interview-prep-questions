@@ -45,8 +45,8 @@ const isBalanced = (parentheses) => {
     const open = { '{': '}', '[': ']', '(': ')' }
     const closed = { '}': true, ']': true, ')': true }
 
-    for (let i = 0; i < parentheses.length; i++) {
-        let paren = parentheses[i]
+    for (let index = 0; index < parentheses.length; index++) {
+        let paren = parentheses[index]
         if (open[paren]) {
             stack.push(paren)
         } else if (closed[paren]) {

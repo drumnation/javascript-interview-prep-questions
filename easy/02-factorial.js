@@ -12,24 +12,14 @@ For example, 5! = 5 x 4 x 3 x 2 x 1 = 120
 
 // NON-RECURSIVELY WITH WHILE LOOP
 
-const factorial = (num) => {
-    // If the number is less than 0, reject it.
-    if (num < 0) {
-        return -1
-    }
-    // If the number is 0, its factorial is 1.
-    else if (num === 0) {
-        return 1
-    }
-    
-    let temp = num
-    while (num-- > 2) {
-        temp *= num
-    }
-    return temp
+const factorialWhile = (number) => {
+    if (number < 0) { return -1 } // If the number is less than 0, reject it.
+    else if (number === 0) { return 1 } // If the number is 0, its factorial is 1.
+    let copy = number
+    while (number-- > 2) { copy *= number } return copy
 }
 
-let result = factorial(8) // 40320
+let result = factorialWhile(8) // 40320
 
 /* 
 SOURCE: https://docs.microsoft.com/en-us/scripting/javascript/advanced/recursion-javascript
@@ -42,12 +32,8 @@ SOURCE: https://docs.microsoft.com/en-us/scripting/javascript/advanced/recursion
 // 3. if no, multiply 
 
 
-const factorialRecursion = (number) => { 
-    
-    if (number === 0) {
-        return 1
-    }
-    return number * factorialRecursion(number - 1)
+function factorial(number) {
+    if (number === 0) { return 1 } return number * factorial(number - 1) 
 }
 
 // LOGS USED
@@ -58,7 +44,7 @@ const factorialRecursion = (number) => {
 
 // TESTS
 
-console.log(factorialRecursion(0)) // 1
+console.log(factorial(0)) // 1
 
 /* CONSOLE OUTPUT
 
@@ -68,7 +54,7 @@ number 0
 
 */
 
-console.log(factorialRecursion(1)) // 1
+console.log(factorial(1)) // 1
 
 /* CONSOLE OUTPUT
 
@@ -82,7 +68,7 @@ number 0
 
 */
 
-console.log('factorial(6): ', factorialRecursion(6)) // 720
+console.log('factorial(6): ', factorial(6)) // 720
 
 /* CONSOLE OUTPUT
 

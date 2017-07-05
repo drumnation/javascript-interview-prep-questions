@@ -21,27 +21,25 @@ SOLUTION STEPS
 
 */ 
 
-const recursiveFib = (number) => {
-    return (
-        (number < 1) 
-            ? 0
-            : (number <= 2)  // 
-                ? 1
-                : recursiveFib(number - 1) + recursiveFib(number - 2) // 
-    )
+function fib(number) {
+    switch(number) {
+        case 0: return 0
+        case 1: return 1
+        default: return fib(number - 1) + fib(number - 2)
+    }
 }
 
 // TESTS
 
 console.log('RECURSIVE FIB')
-console.log(recursiveFib(-50)) // 0
-console.log(recursiveFib(0)) // 0
-console.log(recursiveFib(1)) // 1
-console.log(recursiveFib(8)) // 21
-console.log(recursiveFib(10)) // 55
-console.log(recursiveFib(20)) // 6765
-console.log(recursiveFib(4)) // 3
-// console.log(recursiveFib(50)) // 3
+// console.log(fib(-50)) // 0
+console.log(fib(0)) // 0
+console.log(fib(1)) // 1
+console.log(fib(8)) // 21
+console.log(fib(10)) // 55
+console.log(fib(20)) // 6765
+console.log(fib(4)) // 3
+// console.log(fib(50)) // 3
 
 /* DIAGRAM
 

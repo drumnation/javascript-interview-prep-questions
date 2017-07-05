@@ -11,7 +11,7 @@ ISPRIME
 SOURCE: https://www.thepolyglotdeveloper.com/2015/04/determine-if-a-number-is-prime-using-javascript/
 ----------------------------------------------------------------------------------------------------*/
 
-const isPrime = possiblePrime => {
+const isPrime = (possiblePrime) => {
     for (let count = 2; count < possiblePrime; count++) {
         if (possiblePrime % count === 0) {
             return false

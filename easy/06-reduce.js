@@ -20,7 +20,7 @@ Implement the reduce function.
 Array.prototype.myReduce = function(callback, initialVal) {
     let prevVal = initialVal
     for (let index = 0; index < this.length; index++) {
-        prevVal = callback(prevVal, this[index], index)
+        prevVal = callback(prevVal, this[index])
     }
     return prevVal
 }

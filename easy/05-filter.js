@@ -20,7 +20,7 @@ Implement the filter function.
 Array.prototype.myFilter = function(callback, context) {
     let filtered = []
     for (let index = 0; index < this.length; index++) {
-        if (callback.call(context, this[index], index, this))
+        if (callback.call(context, this[index]))
             filtered.push(this[index])
     }
     return filtered
