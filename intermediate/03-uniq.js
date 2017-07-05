@@ -10,15 +10,8 @@ Can you do it in O(N) time?
 
 SOLUTION STEPS
 
-1. Create a test object and a unique array to hold the deduped numbers
-2. Iterate through all array numbers
-    a. if test object item has a value that matches the current key
-        1. that means it already exists
-        2. ! bang means: if it doesn't exist
-    b. set value of test key equal to true 
-        1. so next time it will fail conditional
-    c. push this number for first time to unique number array
-3. Return the unique array
+1. Create a seen object to track the occurances
+2. return 
 
 */
 
@@ -27,12 +20,12 @@ SOLUTION STEPS
 Array.prototype.uniq = function() {
     let seen = {}
 
-    return this.reduce((result, current) => {
-        if (current in seen) {
-            return result
+    return this.reduce((reductionValue, currentValue) => {
+        if (currentValue in seen) {
+            return reductionValue
         }
-        seen[current] = true
-        return result.concat(current)
+        seen[currentValue] = true
+        return reductionValue.concat(currentValue)
     }, [])
 }
 
