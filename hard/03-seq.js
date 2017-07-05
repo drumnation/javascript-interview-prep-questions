@@ -15,7 +15,6 @@ SOLUTION STEPS
 
 // SOLUTION
 
-
 const seq = async (promisesArray) => {
     try {
         const sequence = await promisesArray.map( promise => promise )
@@ -24,6 +23,17 @@ const seq = async (promisesArray) => {
         console.log(err)
     }
 }
+
+// async function seq([promise, ...promises]) {
+//     if (!promise) {
+//         return []
+//     }
+//     return [
+//         await promise,
+//         ...await seq(promises)
+//     ]
+// }
+
 // TESTS
 let a = Promise.resolve('a')
 let b = Promise.resolve('b')

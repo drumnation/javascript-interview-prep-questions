@@ -11,6 +11,8 @@ function greet(person) {
 greet({ name: 'amy' })
 */
 
+// Corrected
+
 function greet(person) {
     if (person.name === 'amy' ) {
         return 'hey amy'
@@ -44,6 +46,8 @@ for (var i = 0; i < 4; i++) {
 } 
 */
 
+// Corrected
+
 for (let i = 0; i < 4; i++) {
     setTimeout(() => console.log(i), 0)
 }
@@ -75,6 +79,8 @@ let dog = {
 let sayName = dog.sayName
 sayName()
 */
+
+// Corrected
 
 let dog = {
     name: 'doggo',
@@ -114,6 +120,8 @@ fido.bark()
 
 // I want my dog to bark(), but instead I get an error. Why?
 
+// Corrections
+
 function Dog(name) {
     this.name = name
 }
@@ -121,6 +129,7 @@ function Dog(name) {
 Dog.prototype.bark = function() {
     console.log(this.name + ' says woof')
 }
+
 let fido = new Dog('fido')
 fido.bark()
 
@@ -146,9 +155,7 @@ isBig([3])  // true
 
 /*
 
-JavaScript tries to be helpful by converting [2] and [3] to numbers before comparing them 
-to the numbers 0, 1, and 2 (you can try it yourself by running Number([2]) in your REPL). 
-
+JavaScript tries to be helpful by converting [2] and [3] to numbers before comparing them to the numbers 0, 1, and 2
 Since [2] implicitly converts to 2, isBig([2]) returns false. 
 Since [3] implicitly converts to 3, isBig([3]) returns true.
 

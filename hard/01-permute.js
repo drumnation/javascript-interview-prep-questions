@@ -15,21 +15,15 @@ SOLUTION STEPS
 // SOLUTION
 
 const permute = (string) => {
-    if (string.length === 0) {
-        return []
-    } else if (string.length < 2) {
-        return string
-    }
-
+    switch (string.length) { case 0: return []; case 1: return string }
+    
     let permutations = []
-
     for (let index = 0; index < string.length; index++) {
         let character = string[index]
-
         if (string.indexOf(character) !== index) 
             continue
-        let remainingString = string.slice(0, index) + string.slice(index + 1, string.length)
 
+        let remainingString = string.slice(0, index) + string.slice(index + 1, string.length)
         for (let subPermutation of permute(remainingString))
             permutations.push(character + subPermutation)
 
