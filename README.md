@@ -3,7 +3,13 @@
 
 ### What is Big O notation, and why is it useful?
 
+Big O notation is used to describe the performance or complexity of an algorhithm.
+
+It specifically describes the worst case scenario and is useful for describing the execution time required or the space used by the algorhithm.
+
 ### What is the DOM?
+
+HTML you write is parsed by the browser and turned into the DOM.
 
 ### What is the event loop?
 
