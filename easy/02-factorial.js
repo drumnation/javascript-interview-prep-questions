@@ -13,10 +13,13 @@ For example, 5! = 5 x 4 x 3 x 2 x 1 = 120
 // NON-RECURSIVELY WITH WHILE LOOP
 
 const factorialWhile = (number) => {
-    if (number < 0) { return -1 } // If the number is less than 0, reject it.
-    else if (number === 0) { return 1 } // If the number is 0, its factorial is 1.
     let copy = number
-    while (number-- > 2) { copy *= number } return copy
+    switch(number) {
+        case 0: return 1
+        case (number < 0): return -1
+    }
+    while (number-- > 2) { copy *= number } 
+    return copy
 }
 
 let result = factorialWhile(8) // 40320
@@ -32,8 +35,9 @@ SOURCE: https://docs.microsoft.com/en-us/scripting/javascript/advanced/recursion
 // 3. if no, multiply 
 
 
-function factorial(number) {
-    if (number === 0) { return 1 } return number * factorial(number - 1) 
+const factorial = (number) => {
+    if (number === 0) return 1
+    return number * factorial(number - 1) 
 }
 
 // LOGS USED
