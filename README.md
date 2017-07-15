@@ -96,5 +96,3 @@ Frameworks give us structure. Structure is essential for building large and scal
 Frameworks provide standardized and tested ways of doing things. The more users there are of a given framework, the more edge cases that have been encountered and coded for. Your own code may, or may not, be battle hardened in the same way.
 
 Others can be recruited onto a project with a standard framework and have access to the documentation, examples and experience with that framework.
-
-Frameworks solve 
