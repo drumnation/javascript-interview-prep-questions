@@ -14,9 +14,9 @@ For example, 5! = 5 x 4 x 3 x 2 x 1 = 120
 
 const factorialWhile = (number) => {
     let copy = number
-    switch(number) {
+    switch(number) { 
         case 0: return 1
-        case (number < 0): return -1
+        case (number < 0): return -1 
     }
     while (number-- > 2) { copy *= number } 
     return copy
