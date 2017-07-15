@@ -23,7 +23,7 @@ An inner function that has access to the outer (enclosing function's variables--
 
 ### How does prototypal inheritance work, and how is it different from classical inheritance? (this is not a useful question IMO, but a lot of people like to ask it)
 ### How does this work?
-Prototypical inheritance is prefered by many programmers over Classical inheritance. With Classical inheritance classes inherit properties from their parent class in order to reduce duplicated code.  It is often hard to plan ahead and as a result creates a tight coupling porblem as well as an inflexible heirachy problem.  Though Classical inheritance was designed to prevent code duplication, you'll have to if you need to give very specific properties to a class.
+Prototypical inheritance is prefered by many programmers over Classical inheritance. With Classical inheritance classes inherit properties from their parent class in order to reduce duplicated code.  It is often hard to plan ahead and as a result creates a tight coupling problem as well as an inflexible heirachy problem.  Though Classical inheritance was designed to prevent code duplication, you'll have to if you need to give very specific properties to a class.
 
 - Class inheritance creates parent/child object taxonimies as a side effect.
 - The gorilla banana problem (wanted banana, got entire jungle)
