@@ -77,7 +77,7 @@ This is not
 8. Prioritize above the fold content
 9. Use a content delivery network
 
-### What frameworks have you used? What are the pros and cons of each? Why do people use frameworks? What kinds of problems do frameworks solve?
+### What frameworks have you used? What are the pros and cons of each?
 
 React tries to lessen the burden of making HTTP requests, using Apis in projects is easier, whilst maintaining a cross browser compatibility, something that jQuery was hailed for 10 year ago. React also makes it possible for its components to be reused across an app, thus reducing the typing efforts of the developer. 
 
@@ -86,3 +86,15 @@ Say you are paid to paint a fence every day. Each day, there is a minor change t
 With React.js, you would have a way to paint just that square instead of the whole fence. React.js acknowledges that painting is time consuming and figures out how to determine what changed between the existing fence paint job and the new paint job. Then it just does the minimal amount of work to get the new pattern in place.
 
 In the React.js world, the fence is of course the Document Object Model (DOM) of the page. React.js can calculate how the DOM needs to change to get from the old to the new. So you can do the least amount of DOM changes to get the desired DOM (which might be no change at all -- and this is the biggest win because the naive approach would rerender what is already present).
+
+
+
+#### Why do people use frameworks?  What kinds of problems do frameworks solve?
+
+Frameworks give us structure. Structure is essential for building large and scalable applications. We need structure to manage code, create flexible architecture, reuse functional components and enforce separation of concerns. JS Frameworks are, partly, a result of a long stagnation in JS as a language and as an ecosystem.
+
+Frameworks provide standardized and tested ways of doing things. The more users there are of a given framework, the more edge cases that have been encountered and coded for. Your own code may, or may not, be battle hardened in the same way.
+
+Others can be recruited onto a project with a standard framework and have access to the documentation, examples and experience with that framework.
+
+Frameworks solve 
