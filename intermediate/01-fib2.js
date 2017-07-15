@@ -40,7 +40,7 @@ console.log(fib(8)) // 21
 console.log(fib(10)) // 55
 console.log(fib(20)) // 6765
 console.log(fib(4)) // 3
-console.log(fib(50)) // 3
+console.log(fib(50)) // 12586269025
 
 /*
 
