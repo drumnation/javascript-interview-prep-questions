@@ -31,15 +31,15 @@ let bubbleSort = array => {
   return array
 }
 
-let bubbleSort2 = array => {
+const bubbleSort2 = array => {
   let swapped
   do {
-    swapped = false;
-    for (let i = 0; i < array.length-1; i++) {
-      if (array[i] > array[i+1]) {
-        let temp = array[i]
-        array[i] = array[i+1]
-        array[i+1] = temp
+    swapped = false
+    for (let index = 0; index < array.length - 1; index++) {
+      if (array[index] > array[index + 1]) {
+        let temp = array[index]
+        array[index] = array[index + 1]
+        array[index + 1] = temp
         swapped = true
       }
     }

@@ -17,7 +17,7 @@ the 1 will be 'selected' and placed into the front of the array. This can also w
 */
 
 let selectionSort = array => {
-  let newMin;
+  let newMin
   let sorted = []
   while(array.length != 0){
     newMin = minAndRemove(array)
@@ -29,11 +29,11 @@ let selectionSort = array => {
 let minAndRemove = array => {
   let minIndex
   let min = array[0]
-  for (let i = 0; i < array.length; i++){
-    let currentElement = array[i]
-    if (array[i] < min){
-      min = array[i]
-      minIndex = i
+  for (let index = 0; index < array.length; index++) {
+    let currentElement = array[index]
+    if (array[index] < min){
+      min = array[index]
+      minIndex = index
     }
   }
   array.splice(minIndex, 1)

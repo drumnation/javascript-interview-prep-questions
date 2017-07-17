@@ -22,10 +22,11 @@ Like the fib function you implemented above, able to handle numbers up to 50 (hi
 
 const fib = (number) => {
     let a = 0, b = 1, fibonacci = 1, count = 2
-    while (count++ <= number) {
+    while (count <= number) {
         fibonacci = a + b
         a = b
         b = fibonacci
+        count++
     }
     return fibonacci
 }
